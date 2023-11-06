@@ -1,7 +1,11 @@
 import React from "react";
 
 import { FiMenu } from "react-icons/fi";
-import {BiChevronDown, BiChevronRight, BiChevronRightCircle} from 'react-icons/bi'
+import { BiChevronRightCircle, BiPhoneCall, BiSolidBus } from "react-icons/bi";
+import { GiTeacher } from "react-icons/gi";
+import { FaChevronRight, FaLaptopCode, FaTasks } from "react-icons/fa";
+import { MdSupportAgent } from "react-icons/md";
+import { FaScrewdriverWrench } from "react-icons/fa6";
 
 import "./../styles/style.css";
 import logo from "./../assets/logo/png.png";
@@ -82,7 +86,14 @@ function Meyvn() {
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Eum, minima.
                           </p>
-                          <a href="/" className="btn"><span><BiChevronRightCircle style={{marginRight: '5px', fontSize: '18px'}}/> Explore more</span></a>
+                          <a href="/" className="btn">
+                            <span>
+                              <BiChevronRightCircle
+                                style={{ marginRight: "5px", fontSize: "18px" }}
+                              />{" "}
+                              Explore more
+                            </span>
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -124,6 +135,132 @@ function Meyvn() {
                         more.
                       </p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="service">
+        <div className="container">
+          <div className="service-content">
+            <div className="row h-row">
+              <div className="service-description col-3">
+                <h1>our services</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  cumque placeat, est tenetur eligendi obcaecati impedit, quasi
+                  beatae, ab vel quaerat. Eaque saepe minima veniam atque,
+                  aperiam molestias ducimus accusamus.
+                </p>
+
+                <div className="service-toc v-row">
+                  <span>
+                    <FaLaptopCode style={{marginRight:'10px'}} />web development
+                  </span>
+                  <span>
+                    <MdSupportAgent style={{marginRight:'10px'}} /> IT Support & Maintenance
+                  </span>
+                  <span>
+                    <GiTeacher style={{marginRight:'10px'}} /> tutoring & training
+                  </span>
+                  <span>
+                    <FaScrewdriverWrench style={{marginRight:'10px'}} /> device setup & configuration
+                  </span>
+                  <span>
+                    <BiSolidBus style={{marginRight:'10px'}} /> transportation agency
+                  </span>
+                  <span>
+                    <FaTasks style={{marginRight:'10px'}} /> handling customers' task
+                  </span>
+                  <a><BiPhoneCall/> talk to us</a>
+                </div>
+              </div>
+              <div className="service-list col-8">
+                <div className="row h-row">
+                  <div className="service-container col-6">
+                    <a href="/">
+                      <span className="service-icon">
+                        <FaLaptopCode />
+                      </span>
+                      <h5>web development</h5>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. In placeat at ipsa dolore! Quaerat necessitatibus
+                        harum rerum sequi, alias vero ipsam.
+                      </p>
+                    </a>
+                  </div>
+                  <div className="service-container col-6">
+                    <a href="/">
+                      <span className="service-icon">
+                        <MdSupportAgent />
+                      </span>
+                      <h5>IT Support & Maintenance</h5>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. In placeat at ipsa dolore! Quaerat necessitatibus
+                        harum rerum sequi, alias vero ipsam.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div className="row h-row">
+                  <div className="service-container col-6">
+                    <a href="/">
+                      <span className="service-icon">
+                        <GiTeacher />
+                      </span>
+                      <h5>tutoring & training</h5>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. In placeat at ipsa dolore! Quaerat necessitatibus
+                        harum rerum sequi, alias vero ipsam.
+                      </p>
+                    </a>
+                  </div>
+                  <div className="service-container col-6">
+                    <a href="/">
+                      <span className="service-icon">
+                        <FaScrewdriverWrench />
+                      </span>
+                      <h5>device setup & configuration</h5>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. In placeat at ipsa dolore! Quaerat necessitatibus
+                        harum rerum sequi, alias vero ipsam.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <div className="row h-row">
+                  <div className="service-container col-6">
+                    <a href="/">
+                      <span className="service-icon">
+                        <BiSolidBus />
+                      </span>
+                      <h5>transportation agency</h5>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. In placeat at ipsa dolore! Quaerat necessitatibus
+                        harum rerum sequi, alias vero ipsam.
+                      </p>
+                    </a>
+                  </div>
+                  <div className="service-container col-6">
+                    <a href="/">
+                      <span className="service-icon">
+                        <FaTasks />
+                      </span>
+                      <h5>handling customers' task</h5>
+                      <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. In placeat at ipsa dolore! Quaerat necessitatibus
+                        harum rerum sequi, alias vero ipsam.
+                      </p>
+                    </a>
                   </div>
                 </div>
               </div>
