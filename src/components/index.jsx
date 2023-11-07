@@ -3,7 +3,14 @@ import React from "react";
 import { FiMenu } from "react-icons/fi";
 import { BiChevronRightCircle, BiPhoneCall, BiSolidBus } from "react-icons/bi";
 import { GiTeacher } from "react-icons/gi";
-import { FaChevronRight, FaLaptopCode, FaTasks } from "react-icons/fa";
+import {
+  FaArrowCircleRight,
+  FaChevronRight,
+  FaEnvelope,
+  FaLaptopCode,
+  FaPhoneAlt,
+  FaTasks,
+} from "react-icons/fa";
 import { MdSupportAgent } from "react-icons/md";
 import { FaScrewdriverWrench } from "react-icons/fa6";
 
@@ -158,24 +165,32 @@ function Meyvn() {
 
                 <div className="service-toc v-row">
                   <span>
-                    <FaLaptopCode style={{marginRight:'10px'}} />web development
+                    <FaLaptopCode style={{ marginRight: "10px" }} />
+                    web development
                   </span>
                   <span>
-                    <MdSupportAgent style={{marginRight:'10px'}} /> IT Support & Maintenance
+                    <MdSupportAgent style={{ marginRight: "10px" }} /> IT
+                    Support & Maintenance
                   </span>
                   <span>
-                    <GiTeacher style={{marginRight:'10px'}} /> tutoring & training
+                    <GiTeacher style={{ marginRight: "10px" }} /> tutoring &
+                    training
                   </span>
                   <span>
-                    <FaScrewdriverWrench style={{marginRight:'10px'}} /> device setup & configuration
+                    <FaScrewdriverWrench style={{ marginRight: "10px" }} />{" "}
+                    device setup & configuration
                   </span>
                   <span>
-                    <BiSolidBus style={{marginRight:'10px'}} /> transportation agency
+                    <BiSolidBus style={{ marginRight: "10px" }} />{" "}
+                    transportation agency
                   </span>
                   <span>
-                    <FaTasks style={{marginRight:'10px'}} /> handling customers' task
+                    <FaTasks style={{ marginRight: "10px" }} /> handling
+                    customers' task
                   </span>
-                  <a><BiPhoneCall/> talk to us</a>
+                  <a>
+                    <BiPhoneCall /> talk to us
+                  </a>
                 </div>
               </div>
               <div className="service-list col-8">
@@ -263,6 +278,81 @@ function Meyvn() {
                     </a>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="cta cta1">
+        <div className="container">
+          <div className="cta-container">
+            <div className="row h-row">
+              <div className="cta-text col-5">
+                <h1>Got a project? Let’s talk</h1>
+                <ul>
+                  <li>
+                    <a href="">
+                      <FaPhoneAlt /> : <span>1-800-345-8933</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <FaEnvelope /> : <span>office@meyvn.com</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="cta-form col-7">
+                <form>
+                  <div className="row h-row col-12">
+                    <span className="input-box col-6">
+                      <input
+                        type="text"
+                        placeholder="your name"
+                        className="form-input col-12"
+                      />
+                    </span>
+                    <span className="input-box col-6 no-icon">
+                      <input
+                        type="email"
+                        placeholder="email address"
+                        className="form-input col-12"
+                      />
+                    </span>
+                  </div>
+                  <div className="row h-row col-12">
+                    <span className="input-box col-6">
+                      <input
+                        type="text"
+                        placeholder="phone number"
+                        className="form-input col-12"
+                      />
+                    </span>
+                    <span className="input-box col-6 no-icon">
+                      <input
+                        type="text"
+                        placeholder="whats your budget?"
+                        className="form-input col-12"
+                      />
+                    </span>
+                  </div>
+                  <div className="row col-12">
+                    <span className="input-box textarea-form col-12 no-icon">
+                      <textarea
+                        placeholder="message"
+                        cols="30"
+                        rows="10"
+                        className="form-input"
+                      ></textarea>
+                    </span>
+                  </div>
+                  <div className="cta-form-send">
+                    <button className="btn">
+                      <span>Send a request</span>
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

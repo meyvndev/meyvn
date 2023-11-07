@@ -645,9 +645,8 @@ section.service {
   transition: var(--transition);
 }
 
-
 .service-toc a:hover,
-.service-toc a> p:hover {
+.service-toc a > p:hover {
   text-decoration: none;
   color: var(--tertiary-color);
 }
@@ -686,6 +685,80 @@ section.service {
   color: var(--white-color);
   filter: brightness(0.7);
   font-size: 14px;
+}
+
+/*----CTA-----*/
+
+section.cta {
+  background: var(--accent-color);
+  width: 100%;
+  padding: 20px 0;
+  margin: 10px 04;
+}
+
+.cta-container .row {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.cta-text h1 {
+  color: var(--white-color);
+}
+
+.cta-text ul li a {
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  font-weight: lighter;
+  padding: 10px;
+  filter: brightness(0.8);
+  transition: var(--transition);
+}
+
+.cta-text ul li a:hover {
+  filter: brightness(0.9);
+  color: var(--tertiary-color);
+  background: var(--accent-color);
+}
+
+.cta-text ul li a span {
+  margin-left: 5px;
+}
+
+.cta-form form {
+  max-width: 100%;
+}
+
+.cta-form form .input-box {
+  width: 100%;
+  margin: 10px;
+  padding: 2px;
+  border-radius: 2px;
+  border: 2px solid var(--primary-color);
+}
+
+.cta-form form .input-box .form-input {
+  background: var(--primary-color);
+  padding: 5px;
+}
+
+.textarea-form {
+  width: 100%;
+}
+
+.cta-form form .input-box textarea.form-input {
+  height: 120px;
+  width: 100%;
+  resize: none;
+  font-size: 18px;
+  padding: 10px;
+  color: var(--white-color);
+}
+
+.cta-form-send button{
+  background: var(--primary-color);
+  margin: 10px;
 }
 
 /*=======> MODALS <======*/
