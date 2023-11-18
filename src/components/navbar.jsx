@@ -1,285 +1,49 @@
-import React, { useState } from "react";
+import React from "react";
+import { CiGrid41 } from "react-icons/ci";
+import { FaSearch } from "react-icons/fa";
+import { FaChevronDown, FaInstagram, FaOpencart } from "react-icons/fa6";
 
-import { FiMenu } from "react-icons/fi";
-import { BiChevronDown, BiChevronUp, BiChevronRight } from "react-icons/bi";
-import { MdDeveloperBoard, MdSecurity } from "react-icons/md";
-import { GiSpeedometer } from "react-icons/gi";
-import { FaGears } from "react-icons/fa6";
 
-import "./../styles/style.css";
-import logo from "./../assets/logo.png";
-import receptionBg from "./../assets/reception-bg.jpg";
-import tableSetup from "./../assets/table-setup.jpg";
+import logo from "../assets/brand/logo.png";
+import notification from '../assets/team-bg.jpg'
 
 function navbar() {
-  const [serviceModal, SetServiceModel] = useState(false);
-  const [companyModal, SetCompanyModal] = useState(false);
-
-  const openServiceModal = () => {
-    SetServiceModel(true);
-  };
-
-  const closeModal = () => {
-    SetServiceModel(false);
-    SetCompanyModal(false);
-  };
-
-  const openCompanyModal = () => {
-    SetCompanyModal(true);
-  };
-
   return (
-    <header className="navbar">
-      <div className="top-nav">
-        <div className="container">
-          <div className="top-nav-content row h-row">
-            <div className="brand-nav">
-              <a href="#">
-                <img src={logo} alt="logo" className="logo" />
-              </a>
-            </div>
-            <div className="main-nav-link">
-              <ul>
-                <li>
-                  <a onClick={openServiceModal}>
-                    <span>services</span>
-                    <BiChevronDown />
-                  </a>
-                </li>
-                <li>
-                  <a onClick={openCompanyModal}>
-                    <span>company</span>
-                    <BiChevronDown />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" onClick={openServiceModal}>
-                    about us
-                  </a>
-                </li>
-                <li>
-                  <a href="#">contact us</a>
-                </li>
-              </ul>
-            </div>
-            <div className="button nav-button">
-              <a href="#" className="btn">
-                <span>book a call</span>
-              </a>
-            </div>
-            <div className="menu-toggle">
-              <button>
-                <FiMenu />
-              </button>
-            </div>
+    <header>
+      <div className="container">
+        <div className="navbar">
+          <div className="left-nav">
+            <div className="nav-grid"><span><CiGrid41/></span></div>
+            <div className="nav-brand"><img src={logo} alt="" /></div>
+            <div className="nav-links">about</div>
+            <div className="nav-links">services</div>
+            <div className="nav-links">portfolio</div>
+            <div className="nav-links">blog</div>
+            <div className="nav-links">contact</div>
           </div>
-        </div>
-      </div>
-      <div className="main-nav">
-        <div className="main-nav-link">
-          <ul>
-            <li>
-              <a href="#">overview</a>
-            </li>
-            <li>
-              <a href="#">approach</a>
-            </li>
-            <li>
-              <a href="#">expertise</a>
-            </li>
-            <li>
-              <a href="#">work with us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      {serviceModal && (
-        <div className="model-overlay">
-          <div className="modal">
-            <div className="service-dropdown">
-              <div className="container">
-                <button onClick={closeModal}>
-                  <BiChevronUp />
-                </button>
-                <div className="h-row col-12">
-                  <div className="service-list col-3">
-                    <h5>services</h5>
-                    <ul>
-                      <li>
-                        <a href="">Managed Services</a>
-                      </li>
-                      <li>
-                        <a href="">IT Consulting & Advisory</a>
-                      </li>
-                      <li>
-                        <a href="">Cyber Security</a>
-                      </li>
-                      <li>
-                        <a href="">Web Development</a>
-                      </li>
-                      <li>
-                        <a href="">Mobile Development</a>
-                      </li>
-                      <li>
-                        <a href="">Cloud Services</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="business-challenges col-6">
-                    <h5>business challenges</h5>
-                    <div className="h-row">
-                      <a href="">
-                        <span>
-                          <i>
-                            <MdDeveloperBoard />
-                          </i>
-                          <span>digital transformation</span>
-                        </span>
-                      </a>
-                      <a href="">
-                        <span>
-                          <i>
-                            <MdSecurity />
-                          </i>
-                          <span>security</span>
-                        </span>
-                      </a>
-                    </div>
-                    <div className="h-row">
-                      <a href="">
-                        <span>
-                          <i>
-                            <FaGears />
-                          </i>
-                          <span>automation</span>
-                        </span>
-                      </a>
-                      <a href="">
-                        <span>
-                          <i>
-                            <GiSpeedometer />
-                          </i>
-                          <span>gaining efficiency</span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                  <div className="industry-focus col-3">
-                    <h5>industry focus</h5>
-                    <ul>
-                      <li>
-                        <a href="">Industry manufacturing</a>
-                      </li>
-                      <li>
-                        <a href="">transportation logistics</a>
-                      </li>
-                      <li>
-                        <a href="">healthcare</a>
-                      </li>
-                      <li>
-                        <a href="">banks & insurance</a>
-                      </li>
-                      <li>
-                        <a href="">consulting providers</a>
-                      </li>
-                      <li>
-                        <a href="">non profit</a>
-                      </li>
-                      <span>
-                        <a href="">view all</a>
-                      </span>
-                    </ul>
-                  </div>
-                </div>
+          <div className="right-nav">
+            <div className="nav-icon nav-cart"><FaOpencart/></div>
+            <div className="nav-icon insta-icon"><FaInstagram/><span className="insta-count">33k</span></div>
+            <div className="nav-icon search-icon"><FaSearch/></div>
+            <div className="nav-date hrow">
+              <div className="nav-day">27</div>
+              <div className="vrow">
+                <div className="nav-month">nov</div>
+                <div className="nav-year">2023</div>
               </div>
             </div>
           </div>
         </div>
-      )}
-
-      {companyModal && (
-        <div className="modal-overlay">
-          <div className="modal">
-            <div className="company-dropdown">
-              <div className="container">
-                <button onClick={closeModal}>
-                  <BiChevronUp />
-                </button>
-                <div className="h-row col-12">
-                  <div className="company-bio v-row col-4">
-                    <h5 className="subtitle">
-                      Redefining industries through custom product development
-                    </h5>
-                    <img src={receptionBg} alt="" />
-                  </div>
-                  <div className="company-nav-link v-row col-4">
-                    <ul>
-                      <li>
-                        <a href="">
-                          <span>
-                            <BiChevronRight />
-                          </span>
-                          about us
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <span>
-                            <BiChevronRight />
-                          </span>
-                          why us
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <span>
-                            <BiChevronRight />
-                          </span>
-                          our team
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <span>
-                            <BiChevronRight />
-                          </span>
-                          partners & certifications
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <span>
-                            <BiChevronRight />
-                          </span>
-                          careers <span className="career">we are hiring</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="">
-                          <span>
-                            <BiChevronRight />
-                          </span>
-                          reviews & awards
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="company-report col-4 v-row">
-                    <h5 className="subtitle">
-                      Meyvn has been recognized as a Leader in the 2023 Gartner.
-                    </h5>
-                    <span>
-                      <a href="/">View the report</a>
-                    </span>
-                    <img src={tableSetup} alt="" />
-                  </div>
-                </div>
-              </div>
+        <div className="header-notification">
+          <div className="notification-content hrow">
+            <span className="notification-category">gadget</span>
+            <div className="notification-message hrow">
+              <span className="notification-icon"><img src={notification} alt="" /></span>
+              <span className="notification-text">headsets are better when you're playing video game</span>
             </div>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

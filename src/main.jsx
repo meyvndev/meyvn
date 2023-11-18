@@ -14,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <Route index element={<Home />} />
           <Route path="service" element={<Service />} />
         </Route>
+        <Route path="draft" element={<Draft />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
