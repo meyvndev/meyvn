@@ -1,13 +1,340 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/brand/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meyvn - Your Source for IT Excellence</title>
+    <title>
+      Meyvn Agency - Software, Educational and IT Professional Services
+    </title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/brand/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@200;300;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/627b5e26a3.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="brand">
+            <a href="#"
+              ><img src="./assets/images/brand/logo.png" alt="Meyvn"
+            /></a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="#">home</a></li>
+              <li><a href="#">our story</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">portfolio</a></li>
+              <li><a href="#">learning hub</a></li>
+              <li><a href="#">blog</a></li>
+            </ul>
+          </div>
+          <div class="nav-btn">
+            <a href="#" class="btn">contact us</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1>Empowering Futures Through Tech Excellence</h1>
+            <p>
+              Unlock digital potential and transform lives with Meyvn Agency. We
+              specialize in coding education, training, and innovative tech
+              solutions, paving the way for a connected tomorrow.
+            </p>
+            <a href="#services" class="btn">Explore Our Services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="about-img">
+                <!-- <video controls autoplay loop>
+                  <source
+                    src="./assets/images/all/vid-meet2.mp4"
+                    type="video/mp4"
+                  />
+                </video> -->
+                <iframe
+                  id="youtubePlayer"
+                  width="640"
+                  height="360"
+                  src="https://www.youtube.com/embed/tJNtIvCMQl4?enablejsapi=1"
+                  title="Unlocking Tech Mastery: A Comprehensive Guide to 200+ Tips and Tricks by Meyvn - Learnwithmeyvn @iwm"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="content">
+                <span>About Us</span>
+                <h1>Who Are We?</h1>
+                <p>
+                  Welcome to the intersection of innovation and luxury. At Meyvn
+                  and Rwandanna, we are more than brands; we are architects of
+                  transformative experiences. As Meyvn, our passion lies in
+                  shaping the future of technology through accessible ICT
+                  training, cutting-edge software development, and personalized
+                  IT solutions. On the other hand, Rwandanna is your gateway to
+                  a lifestyle curated with e-commerce excellence, exclusive
+                  luxury property listings, and enriching educational and wealth
+                  insights.
+                </p>
+                <div>
+                  <a href="" class="btn">Join us now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div id="services" class="container">
+          <div class="titles">
+            <span>Services</span>
+            <h1>What We Offer?</h1>
+          </div>
+          <div class="cards">
+            <div class="col-6 card">
+              <div class="content">
+                <img src="./assets/images/bg/1.jpg" alt="Tutoring Image" />
+                <h2>ICT Skills and Programming Courses</h2>
+                <span
+                  >Unlock Your Potential with Cutting-Edge ICT Skills and
+                  Programming Courses</span
+                >
+                <p>
+                  Dive into the world of technology with our expert-led courses
+                  in ICT skills, web design, development, Git, GitHub, and
+                  Figma. Master the tools that power the digital age and elevate
+                  your skills to new heights. Enroll now and pave your way to
+                  digital excellence.
+                </p>
+                <a href="" class="cta-btn"
+                  >Transform Your Future - Enroll Today</a
+                >
+              </div>
+            </div>
+            <div class="col-6 card">
+              <div class="content">
+                <video autoplay loop>
+                  <source
+                    src="./assets/images/all/vid-meet1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <h2>It support and consultation</h2>
+                <span
+                  >Seamless Device Setup, IT Support, and Expert
+                  Consulting</span
+                >
+                <p>
+                  Experience hassle-free device setup, prompt IT support, and
+                  strategic consulting tailored to your business needs. Our
+                  dedicated team ensures your tech environment runs smoothly,
+                  allowing you to focus on what matters most – your success.
+                </p>
+                <a href="" class="cta-btn"
+                  >Elevate Your Tech Experience - Contact Us Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="col-6 card">
+              <div class="content">
+                <video autoplay loop>
+                  <source
+                    src="./assets/images/all/vid-dev.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <h2>Web design and development</h2>
+                <span
+                  >Unleash Creativity with Graphic Design, Web Design, and
+                  Development
+                </span>
+                <p>
+                  Immerse yourself in the world of design excellence. From
+                  captivating graphics to stunning websites, our skilled team
+                  crafts visual masterpieces tailored to your brand. Your
+                  vision, our artistry – let's create something extraordinary.
+                </p>
+                <a href="" class="cta-btn"
+                  >Elevate Your Brand - Consult Our Design Experts</a
+                >
+              </div>
+            </div>
+            <div class="col-6 card">
+              <div class="content">
+                <video autoplay loop>
+                  <source
+                    src="./assets/images/all/vid-meet2.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <h2>go to tech shop</h2>
+                <span
+                  >Explore, Shop, and Experience the Future with Our Tech
+                  E-commerce</span
+                >
+                <p>
+                  Discover the latest tech devices and innovations in our
+                  one-stop online shop. From gadgets to gizmos, find tech
+                  treasures that suit your style and needs. Stay ahead in the
+                  tech game – start shopping now.
+                </p>
+                <a href="" class="cta-btn"
+                  >Shop the Future - Explore Our Tech Catalog</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="map col-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m19!1m12!1m3!1d1994.1372643928783!2d29.750664054597475!3d-1.593930589974391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m4!3e6!4m0!4m1!2skivuruga!5e0!3m2!1sen!2sde!4v1703351908556!5m2!1sen!2sde"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="address col-4">
+              <h3>Contact Us</h3>
+              <ul>
+                <li>
+                  <strong>Address:</strong> 879 W Pico Blvd, Los Angeles, CA
+                  9001 10801 USA
+                </li>
+                <li><strong>Phone Number:</strong> +(1) 987 654 3210</li>
+                <li><strong>Email Address:</strong> info@yourwebsite.com</li>
+              </ul>
+            </div>
+            <div class="col-8 contact-form">
+              <h3>Send us a Message</h3>
+              <form action="#">
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Message"
+                ></textarea>
+                <button class="btn" type="submit">Submit Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="site-footer">
+          <div class="quick-links">
+            <h3>Quick Links:</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">ICT Training</a></li>
+              <li><a href="#">Device Setup & IT Support</a></li>
+              <li><a href="#">Graphic & Web Design</a></li>
+              <li><a href="#">E-commerce</a></li>
+              <li><a href="#">Luxury Property Listing</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="stay-connected">
+            <h3>Stay Connected:</h3>
+            <div class="newsletter-signup">
+              <p>Newsletter Signup:</p>
+              <p>
+                Subscribe to our newsletter for updates, promotions, and
+                valuable insights.
+              </p>
+              <!-- Add your newsletter signup form here -->
+            </div>
+            <div class="follow-us">
+              <p>Follow Us:</p>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/meyvnagency"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.instagram.com/rwandanna"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="https://www.twitter.com/meyvnagency"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <h3>Contact Information:</h3>
+            <div class="meyvn-info">
+              <p>Meyvn:</p>
+              <p>Phone: 073373773</p>
+              <p>
+                Email:
+                <a href="mailto:info.meyvn@gmail.com"
+                  ><i class="fa-solid fa-envelope"></i
+                ></a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="down row">
+          <span>&copy; Meyvn Agency 2021, In partnership with Rwandanna</span>
+          <span
+            ><ul>
+              <li><a href="">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
