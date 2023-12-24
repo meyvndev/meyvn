@@ -466,6 +466,30 @@ header {
   padding: 80px 0;
 }
 
+.address{
+  flex-direction: column;
+}
+
+.address ul strong{
+  padding-right: 5px;
+}
+
+.address ul{
+  flex-direction: column;
+}
+
+.address .social a:hover{
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.address .social a{
+  background: var(--secondary-color);
+  transition: var(--transition);
+  color: var(--white-color);
+  padding: 8px;
+}
+
 .contact .map {
   position: absolute;
   top: 0;
@@ -478,6 +502,7 @@ header {
 
 .contact .container {
   z-index: 1;
+  background: transparent;
 }
 
 .contact h3 {
@@ -505,6 +530,10 @@ header {
   box-sizing: border-box;
 }
 
+.contact-info p i{
+  padding-right: 5px;
+}
+
 /* .contact-form button {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -519,8 +548,40 @@ footer {
 }
 
 footer hr{
-  width: 120%;
+  width: 110%;
   margin-left: -60px;
+}
+
+footer p{
+  display: flex;
+  align-items: center;
+}
+
+.newsletter-signup button{
+  background-color: var(--primary-color);
+  transition: var(--transition);
+  color: var(--white-color);
+  text-transform: uppercase;
+  padding: 8px 15px;
+  cursor: pointer;
+  margin-top: 5px;
+  border: 0;
+}
+
+iframe{
+  border: none;
+}
+
+.newsletter-signup button:hover{
+  background: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.newsletter-signup input{
+  color: var(--secondary-color);
+  font-size: 16px;
+  padding: 8px;
+  border: 0;
 }
 
 footer .down{
